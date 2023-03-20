@@ -3,10 +3,6 @@ package jm.task.core.jdbc.dao;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.*;
-import org.hibernate.cfg.Configuration;
-
-import javax.persistence.criteria.CriteriaBuilder;
-import java.sql.ResultSet;
 import java.util.List;
 
 public class UserDaoHibernateImpl implements UserDao {
