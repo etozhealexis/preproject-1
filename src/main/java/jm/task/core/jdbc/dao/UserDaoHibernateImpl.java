@@ -15,8 +15,8 @@ public class UserDaoHibernateImpl implements UserDao {
     private final SessionFactory sessionFactory;
 
 
-    public UserDaoHibernateImpl(Configuration configuration) {
-        this.sessionFactory = Util.createSessionFactory(configuration);
+    public UserDaoHibernateImpl() {
+        this.sessionFactory = Util.createSessionFactory(Util.getConfiguration());
         this.session = sessionFactory.openSession();
     }
 

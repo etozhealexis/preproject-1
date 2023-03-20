@@ -2,6 +2,7 @@ package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.executor.Executor;
 import jm.task.core.jdbc.model.User;
+import jm.task.core.jdbc.util.Util;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -14,8 +15,8 @@ public class UserDaoJDBCImpl implements UserDao {
     private final Connection connection;
     private final Executor executor;
 
-    public UserDaoJDBCImpl(Connection connection) {
-        this.connection = connection;
+    public UserDaoJDBCImpl() {
+        this.connection = Util.getConnection();
         this.executor = new Executor(connection);
     }
 
