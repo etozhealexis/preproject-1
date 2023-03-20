@@ -44,7 +44,6 @@ public class UserDaoHibernateImpl implements UserDao {
         session.getTransaction().commit();
         session.close();
         sessionFactory.close();
-
     }
 
     @Override
@@ -58,7 +57,6 @@ public class UserDaoHibernateImpl implements UserDao {
         session.getTransaction().commit();
         session.close();
         sessionFactory.close();
-
     }
 
     @Override
@@ -73,7 +71,6 @@ public class UserDaoHibernateImpl implements UserDao {
         session.getTransaction().commit();
         session.close();
         sessionFactory.close();
-
     }
 
     @Override
